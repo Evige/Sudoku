@@ -31,15 +31,15 @@ public class SudokuVerifier {
 		int result = 0;
 		
 		int looper = 0;
-		int solutionDigit = 0;
+		int solutionDigitLocation = 0;
 		while (looper < 9) {
 			int y = 1;
 			expectedGlobalRow = new ArrayList();
 			List<Integer> checkedSolutionRow = new ArrayList();
 			for (y = 1; y <= 9; y++) {
 				expectedGlobalRow.add(y);
-				checkedSolutionRow.add(solutionNumbers.get(solutionDigit));
-				solutionDigit = solutionDigit + 1;
+				checkedSolutionRow.add(solutionNumbers.get(solutionDigitLocation));
+				solutionDigitLocation = solutionDigitLocation + 1;
 			}
 			Collections.sort(checkedSolutionRow);
 			
@@ -51,13 +51,5 @@ public class SudokuVerifier {
 		}
 		
 		return result;
-	}
-	
-	public void setCandidateSolution(String candidateSolution) {
-		this.candidateSolution = candidateSolution;
-	}
-	
-	public String getCandidateSolution() {
-		return candidateSolution;
 	}
 }

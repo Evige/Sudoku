@@ -1,0 +1,5 @@
+FileOpenedAction 1444652236657 TestSudokuVerifier.java 1944 5 18 4
+UnitTestCaseAction 1444652311721 GildedRoseTest.java OK
+UnitTestSessionAction 1444652311731 GildedRoseTest (1) OK
+UnitTestCaseAction 1444652336372 TestSudokuVerifier.java FAIL
+UnitTestSessionAction 1444652336402 TestSudokuVerifier FAIL
